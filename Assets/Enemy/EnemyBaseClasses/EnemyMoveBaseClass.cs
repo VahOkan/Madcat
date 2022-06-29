@@ -48,7 +48,6 @@ public abstract class EnemyMoveBaseClass : MonoBehaviour
     }
 
     public void CheckTheState() {
-        Debug.Log(state);
         switch (state) {
             case States.RandomMove:
                 agent.destination = targetPosition;
