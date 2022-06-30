@@ -18,11 +18,14 @@ public abstract class EnemyMoveBaseClass : MonoBehaviour
     private const int checkRepeatRate = 1;
     private const float stuckSpeed = 0.5f;
     private const float acceleration = 0.33f;
-    private const float walkRadius = 5;
+    private const float walkRadius = 10;
+    private const float nextRandomWalkRadius = 20;
     private const int layermask = 6;
 
     void OnDrawGizmos() {
         Gizmos.DrawWireSphere(transform.position, viewDistance);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, walkRadius);
     }
 
     private void OnEnable() {
