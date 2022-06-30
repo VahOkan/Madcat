@@ -36,7 +36,7 @@ public class PlayerMovementInputController : MonoBehaviour
         followTarget.transform.localEulerAngles = new Vector3(angles.x, 0, 0);
 
         float moveSpeed = speed / 100f;
-        Vector3 moveDelta = (transform.forward * _move.y * moveSpeed) + (transform.right * _move.x * moveSpeed);
+        Vector3 moveDelta = (transform.forward * _move.y * moveSpeed) + (transform.right * _move.x * moveSpeed) + transform.up;
         transform.position += moveDelta; 
         Debug.Log(moveDelta);       
     }
