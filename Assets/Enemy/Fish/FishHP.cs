@@ -6,7 +6,7 @@ public class FishHP : EnemyHPBaseClass
 {
     public override void Start()
     {
-        health = 6;
+        hp = 6;
         armor = 1;
     }
 }
