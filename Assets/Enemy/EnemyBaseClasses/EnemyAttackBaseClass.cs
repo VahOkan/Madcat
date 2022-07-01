@@ -6,14 +6,15 @@ public abstract class EnemyAttackBaseClass : MonoBehaviour
 {
     public Player player;
     public float attackDistance;
+    public int dmg;
     void Update()
     {
         if (IsPlayerInDistance())
-            Attack();
+            PlayAttackAnimation();
     }
     public abstract void Start();
     public abstract bool IsPlayerInDistance();
-    public abstract void Attack();
+    public abstract void PlayAttackAnimation();
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

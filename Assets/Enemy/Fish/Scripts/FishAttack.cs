@@ -8,12 +8,12 @@ public class FishAttack : EnemyAttackBaseClass
     {
         player = Player.Instance;
         attackDistance = 7;
+        dmg = 1;
     }
-    public override void Attack()
+    public override void PlayAttackAnimation()
     {
         
     }
-
     public override bool IsPlayerInDistance()
     {
         if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
@@ -21,5 +21,4 @@ public class FishAttack : EnemyAttackBaseClass
         else
             return false;
     }
-
 }
