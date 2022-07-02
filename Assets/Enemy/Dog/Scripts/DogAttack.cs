@@ -8,8 +8,9 @@ public class DogAttack : EnemyAttackBaseClass
     {
         player = Player.Instance;
         attackDistance = 5;
+        dmg = 2;
     }
-    public override void Attack()
+    public override void PlayAttackAnimation()
     {
 
     }

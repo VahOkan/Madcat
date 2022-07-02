@@ -11,7 +11,7 @@ public class PlayerMovementInputController : MonoBehaviour
     public float speed = 1f;
     private Vector2 _move;
     private Vector2 _look;
-    private const float _rotationPower = 3f;
+    private const float _rotationPower = 0.3f;
     private const float _rotationLerp = 0.5f;
 
     public void OnMove(InputValue value) {
@@ -25,9 +25,8 @@ public class PlayerMovementInputController : MonoBehaviour
     private void Update()
     {
         followTarget.transform.rotation *= Quaternion.AngleAxis(_look.x * _rotationPower, Vector3.up);
-        followTarget.transform.rotation *= Quaternion.AngleAxis(_look.y * _rotationPower, Vector3.right);
+        followTarget.transform.rotation *= Quaternion.AngleAxis(_look.y * _rotationPower, Vector3.left);
 
-        Debug.Log(followTarget.transform.rotation);
         Vector3 angles = followTarget.transform.localEulerAngles;
         angles.x = ClampRotation(angles.x);
         angles.z = 0;
@@ -37,8 +36,7 @@ public class PlayerMovementInputController : MonoBehaviour
 
         float moveSpeed = speed / 100f;
         Vector3 moveDelta = (transform.forward * _move.y * moveSpeed) + (transform.right * _move.x * moveSpeed) + transform.up;
-        transform.position += moveDelta; 
-        Debug.Log(moveDelta);       
+        transform.position += moveDelta;     
     }
 
     private float ClampRotation(float angle) {

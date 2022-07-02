@@ -6,7 +6,7 @@ public class DogHP : EnemyHPBaseClass
 {
     public override void Start()
     {
-        health = 10;
+        hp = 10;
         armor = 1.5f;
     }
 }

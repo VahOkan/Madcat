@@ -72,7 +72,6 @@ public abstract class EnemyMoveBaseClass : MonoBehaviour
         if (!foundPosition)
             return;
         targetPosition = navHit.position;
-        Debug.Log(targetPosition);
     }
 
     public void MoveToPlayer() {
