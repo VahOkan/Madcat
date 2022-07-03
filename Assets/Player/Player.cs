@@ -1,12 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+namespace Player
 {
-    public static Player Instance;
-    private void Awake()
+    public class Player : MonoBehaviour, Interfaces.IDamageable
     {
-        Instance = this;
+        public static Player Instance;
+        [SerializeField] private TextMeshProUGUI hpText;
+        public int hp { get; set; }
+        
+        private void Awake()
+        {
+            Instance = this;
+        }
+        private void Start()
+        {
+            hp = 100;
+        }
+        public void TakeDmg(int dmg)
+        {
+            hp -= dmg;
+            hpText.text = "HP: " + hp.ToString();
+        }
     }
 }

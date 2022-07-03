@@ -1,24 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
+using Enemy.Base;
+using Player;
 using UnityEngine;
 
-public class FishAttack : EnemyAttackBaseClass
+namespace Enemy.Fish
 {
-    public override void Start()
+    public class FishAttack : BaseEnemyAttack
     {
-        player = Player.Instance;
-        attackDistance = 7;
-        dmg = 1;
-    }
-    public override void PlayAttackAnimation()
-    {
+        private void Start()
+        {
+            player = Player.Player.Instance;
+            attackDistance = 7;
+            dmg = 1;
+        }
+        public override void PlayAttackAnimation()
+        {
         
-    }
-    public override bool IsPlayerInDistance()
-    {
-        if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            return true;
-        else
-            return false;
+        }
+        public override bool IsPlayerInDistance()
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
+                return true;
+            else
+                return false;
+        }
     }
 }

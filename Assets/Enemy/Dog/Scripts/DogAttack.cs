@@ -1,25 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
+using Enemy.Base;
+using Player;
 using UnityEngine;
 
-public class DogAttack : EnemyAttackBaseClass
+namespace Enemy.Dog
 {
-    public override void Start()
+    public class DogAttack : BaseEnemyAttack
     {
-        player = Player.Instance;
-        attackDistance = 5;
-        dmg = 2;
-    }
-    public override void PlayAttackAnimation()
-    {
+        private void Start()
+        {
+            player = Player.Player.Instance;
+            attackDistance = 5;
+            dmg = 2;
+        }
+        public override void PlayAttackAnimation()
+        {
 
+        }
+        public override bool IsPlayerInDistance()
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
+                return true;
+            else
+                return false;
+        }
     }
-    public override bool IsPlayerInDistance()
-    {
-        if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            return true;
-        else
-            return false;
-    }
-
 }
