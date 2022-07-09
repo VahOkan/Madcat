@@ -7,10 +7,22 @@ namespace Enemy.Dog
     {
         public void Start()
         {
-            player = Player.Player.Instance;
+            playerHp = Player.PlayerHP.Instance;
             defaultSpeed = 3;
             attackSpeed = 6;
             viewDistance = 10;
+        }
+
+        protected override void Freeze()
+        {
+            agent.isStopped = true;
+            isFrozen = true;
+        }
+
+        protected override void UnFreeze()
+        {
+            agent.isStopped = false;
+            isFrozen = false;
         }
     }
 }

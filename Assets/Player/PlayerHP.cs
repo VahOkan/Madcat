@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Player
 {
-    public class Player : MonoBehaviour, Interfaces.IDamageable
+    public class PlayerHP : MonoBehaviour, Interfaces.IDamageable
     {
-        public static Player Instance;
+        public static PlayerHP Instance;
         [SerializeField] private TextMeshProUGUI hpText;
         public int hp { get; set; }
         

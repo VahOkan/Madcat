@@ -1,4 +1,4 @@
-﻿namespace Enemy
+﻿namespace Enemy.Base
 {
     public class Consts
     {

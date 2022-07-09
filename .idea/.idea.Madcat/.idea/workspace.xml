@@ -5,15 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54382f50-4641-4254-a868-fa3499e09316" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Madcat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Madcat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DmgPopup/DmgPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DmgPopup/DmgPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyMoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/Consts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/Consts.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/DmgPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/DmgPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogMoveController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyBaseClasses/EnemyAttackBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyBaseClasses/EnemyAttackBaseClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishMoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerMoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FightingEnemies.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FightingEnemies.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/StartSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,6 +103,9 @@
       <workItem from="1656709692949" duration="516000" />
       <workItem from="1656710227540" duration="100000" />
       <workItem from="1656791784824" duration="181000" />
+      <workItem from="1657391341218" duration="559000" />
+      <workItem from="1657391917068" duration="5622000" />
+      <workItem from="1657398026451" duration="2206000" />
     </task>
     <servers />
   </component>

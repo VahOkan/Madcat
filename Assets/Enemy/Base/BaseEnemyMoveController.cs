@@ -8,18 +8,26 @@ namespace Enemy.Base
     {
         public enum States { StartNewMove, RandomMove, MoveToPlayer, Stuck };
         public States state = new States();
-        public Player.Player player;
+        public Player.PlayerHP playerHp;
         public Vector3 targetPosition;
         public NavMeshAgent agent;
         public int defaultSpeed;
         public int attackSpeed;
         public float viewDistance;
         public float time;
+        protected bool isFrozen;
         
         private void OnEnable() 
         {
+            SettingsManager.FreezeGame += Freeze;
+            SettingsManager.UnFreezeGame += UnFreeze;
             state = States.StartNewMove;
             InvokeRepeating(nameof(CheckIfStuck), Consts.CheckStartSec, Consts.CheckRepeatRate);
+        }
+        private void OnDisable()
+        {
+            SettingsManager.FreezeGame -= Freeze;
+            SettingsManager.UnFreezeGame -= UnFreeze;
         }
         void OnDrawGizmos() 
         {
@@ -30,6 +38,9 @@ namespace Enemy.Base
         }
         private void Update() 
         {
+            if (isFrozen)
+                return;
+
             CheckIfPlayerInDistance();
             CheckTheState();
         }
@@ -40,7 +51,7 @@ namespace Enemy.Base
         }
         private void CheckIfPlayerInDistance() 
         {
-            if (Vector3.Distance(transform.position, player.transform.position) < viewDistance)
+            if (Vector3.Distance(transform.position, playerHp.transform.position) < viewDistance)
                 state = States.MoveToPlayer;
             else if (state == States.MoveToPlayer)
                 state = States.StartNewMove;
@@ -69,9 +80,11 @@ namespace Enemy.Base
             targetPosition = navHit.position;
         }
         private void MoveToPlayer() {
-            agent.destination = player.transform.position;
+            agent.destination = playerHp.transform.position;
             agent.speed = Mathf.Lerp(defaultSpeed, attackSpeed, time);
             time += Consts.Acceleration * Time.deltaTime;
         }
+        protected abstract void Freeze();
+        protected abstract void UnFreeze();
     }
 }
