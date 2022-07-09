@@ -10,15 +10,12 @@ public class FishAttack : EnemyAttackBaseClass
         attackDistance = 7;
         dmg = 1;
     }
-    public override void PlayAttackAnimation()
+    protected override void PlayAttackAnimation()
     {
         
     }
-    public override bool IsPlayerInDistance()
+    protected override bool IsPlayerInDistance()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            return true;
-        else
-            return false;
+        return Vector3.Distance(transform.position, player.transform.position) < attackDistance ? true : false;
     }
 }
