@@ -10,7 +10,7 @@ public class DmgPlayer : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print(collision.transform.name);
-        if (collision.transform.TryGetComponent(out Player.PlayerHP player))
+        if (collision.transform.TryGetComponent(out PlayerHP player))
         {
             player.TakeDmg(parentObject.dmg);
         }

@@ -1,26 +1,29 @@
 using TMPro;
 using UnityEngine;
-
-namespace Player
+public class PlayerHP : MonoBehaviour
 {
-    public class PlayerHP : MonoBehaviour, Interfaces.IDamageable
+    public static PlayerHP Instance;
+    [SerializeField] private TextMeshProUGUI hpText;
+    int hp;
+    
+    private void Awake()
     {
-        public static PlayerHP Instance;
-        [SerializeField] private TextMeshProUGUI hpText;
-        public int hp { get; set; }
-        
-        private void Awake()
-        {
-            Instance = this;
-        }
-        private void Start()
-        {
+        Instance = this;
+    }
+    private void Start()
+    {
+        hp = 100;
+    }
+    public void TakeDmg(int dmg)
+    {
+        hp -= dmg;
+        hpText.text = "HP: " + hp.ToString();
+    }
+    public void AddHP(int hpToAdd)
+    {
+        hp += hpToAdd;
+        if (hp > 100)
             hp = 100;
-        }
-        public void TakeDmg(int dmg)
-        {
-            hp -= dmg;
-            hpText.text = "HP: " + hp.ToString();
-        }
+        hpText.text = "HP: " + hp.ToString();
     }
 }

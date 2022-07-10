@@ -6,22 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="54382f50-4641-4254-a868-fa3499e09316" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Madcat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Madcat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Madcat/Madcat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Madcat/Madcat.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DmgPopup/DmgPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DmgPopup/DmgPopup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/BaseEnemyMoveController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/Consts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/Consts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/DmgPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/DmgPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Base/EnemyAttackBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Base/EnemyAttackBaseClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/Dog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/Dog.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogAttack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Dog/Scripts/DogMoveController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyBaseClasses/EnemyAttackBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyBaseClasses/EnemyAttackBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/Fish.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fish/Scripts/FishMoveController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interfaces/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interfaces/IDamageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Consts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Consts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHP.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerMoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerMoveController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerShoot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FightingEnemies.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FightingEnemies.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartUI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartUI.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +108,8 @@
       <workItem from="1657391341218" duration="559000" />
       <workItem from="1657391917068" duration="5622000" />
       <workItem from="1657398026451" duration="2206000" />
+      <workItem from="1657492618893" duration="2000" />
+      <workItem from="1657494334256" duration="1000" />
     </task>
     <servers />
   </component>

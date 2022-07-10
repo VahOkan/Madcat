@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Player;
 
 public class DogAttack : EnemyAttackBaseClass
 {
     public override void Start()
     {
-        player = Player.PlayerHP.Instance;
+        player = PlayerHP.Instance;
         attackDistance = 5;
         dmg = 2;
     }

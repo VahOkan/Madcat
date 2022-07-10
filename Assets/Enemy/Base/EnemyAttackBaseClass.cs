@@ -1,11 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class EnemyAttackBaseClass : MonoBehaviour
 {
-    public Player.PlayerHP player;
+    public PlayerHP player;
     public float attackDistance;
     public int dmg;
     protected bool isFrozen;

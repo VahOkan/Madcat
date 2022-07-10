@@ -7,7 +7,7 @@ public class FishAttack : EnemyAttackBaseClass
 {
     public override void Start()
     {
-        player = Player.PlayerHP.Instance;
+        player = PlayerHP.Instance;
         attackDistance = 7;
         dmg = 1;
     }
