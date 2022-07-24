@@ -21,6 +21,7 @@ public class PlayerHP : MonoBehaviour
     }
     public void AddHP(int hpToAdd)
     {
+        AudioManager.Instance.PlaySound("HP");
         hp += hpToAdd;
         if (hp > 100)
             hp = 100;

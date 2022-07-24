@@ -19,7 +19,7 @@ public abstract class BaseEnemyMoveController : MonoBehaviour
         SettingsManager.FreezeGame += Freeze;
         SettingsManager.UnFreezeGame += UnFreeze;
         state = States.StartNewMove;
-        InvokeRepeating(nameof(CheckIfStuck), Consts.CheckStartSec, Consts.CheckRepeatRate);
+        InvokeRepeating(nameof(CheckIfStuck), Consts.EnemyStartCheckingIfStuck, Consts.EnemyCheckingIfStuckRepeatRate);
     }
     private void OnDisable()
     {
@@ -54,20 +54,21 @@ public abstract class BaseEnemyMoveController : MonoBehaviour
             state = States.StartNewMove;
     }
     private void CheckTheState() 
+    {
+        switch (state) 
         {
-            switch (state) {
-                case States.RandomMove:
-                    agent.destination = targetPosition;
-                    break;
-                case States.MoveToPlayer:
-                    MoveToPlayer();
-                    break;
-                case States.StartNewMove or States.Stuck:
-                    SetRandomPosition();
-                    state = States.RandomMove;
-                    break;
-            }
+            case States.RandomMove:
+                agent.destination = targetPosition;
+                break;
+            case States.MoveToPlayer:
+                MoveToPlayer();
+                break;
+            case States.StartNewMove or States.Stuck:
+                SetRandomPosition();
+                state = States.RandomMove;
+                break;
         }
+    }
     private void SetRandomPosition() 
         {
             Vector3 randomPos = Random.insideUnitSphere * Consts.WalkRadius + transform.position;
