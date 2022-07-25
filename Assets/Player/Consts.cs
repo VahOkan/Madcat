@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 public class Consts : MonoBehaviour //TODO - fuck consts?
 {
-    public static float MoveSpeed = 0.3f;
+    public static float MoveSpeed = 10f;
     public static float RotationPower = 0.3f;
     public static float RotationLerp = 0.5f;
     public static float EnemyStartCheckingIfStuck = 0;

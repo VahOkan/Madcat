@@ -34,10 +34,7 @@ public class PlayerMoveController : MonoBehaviour
     private void Update()
     {
         if (isFrozen)
-        {
-            transform.position += transform.up;
             return;
-        }
 
         followTarget.transform.rotation = RotateCinemachine(followTarget.transform.rotation);
         followTarget.transform.localEulerAngles = ClampRotation(followTarget.transform.localEulerAngles);
@@ -100,9 +97,9 @@ public class PlayerMoveController : MonoBehaviour
     {
         Transform transform1;
         (transform1 = transform).rotation = Quaternion.Euler(0, followTarget.transform.rotation.eulerAngles.y, 0);
-        Vector3 moveDelta = (transform1.forward * (_move.y * Consts.MoveSpeed)) + 
-                            (transform1.right * (_move.x * Consts.MoveSpeed)) + transform1.up;
-        transform1.position += moveDelta; 
+        Vector3 moveDelta = (transform1.forward * (_move.y * Consts.MoveSpeed)) +
+                            (transform1.right * (_move.x * Consts.MoveSpeed));
+        transform1.position += moveDelta * Time.deltaTime;
     }
     private void ResetCinemachine()
     {
